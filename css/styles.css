@@ -1,0 +1,313 @@
+/* Fonts */
+
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-cyrillic_latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v30-cyrillic_latin-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/play-v19-cyrillic_latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/play-v19-cyrillic_latin-700.woff2') format('woff2');
+}
+
+/* Colors */
+
+:root {
+    /* Primary Colors */
+    --primary-color-1: #FFFFFF;
+    --primary-color-2: #011C44;
+    --primary-color-3: #2B7FFF;
+
+    /* Secondary Colors */
+    --secondary-color-1: #4A4A4A;
+    --secondary-color-2: #747272;
+    --secondary-color-3: #011F4A;
+    --secondary-color-4: #FFD02B;
+    --secondary-color-5: #000000;
+}
+
+/* HTML */
+
+/* Body */
+
+body {
+    background-color: var(--primary-color-1);
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 p {
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+
+/* Menu */
+.navigation {}
+
+.menu__navigation {}
+
+.menu__list {}
+
+.menu__line {}
+
+.menu__link {
+    color: var(--primary-color-2);
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.mini-accent {
+    font-weight: 600;
+}
+
+.middle-accent {
+    color: var(--primary-color-3);
+    font-weight: 600;
+}
+
+.max-accent {
+    color: var(--primary-color-3);
+    font-weight: 700;
+}
+
+.menu__address {}
+
+/* Front Section */
+.front {}
+
+.front__text {
+    color: var(--primary-color-2);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.front__text_extra {
+    color: var(--secondary-color-1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.title {
+    font-family: Play;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 74px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.front__title {
+    color: var(--primary-color-3);
+    font-size: 140px;
+    line-height: 114px;
+}
+
+.button {
+    background-color: var(--primary-color-3);
+    width: 219px;
+    height: 53px;
+    padding: 16px, 32px, 16px, 32px;
+    border-radius: 32px;
+    gap: 10px;
+
+    color: var(--primary-color-1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.front__button {}
+
+/* Presentation Section */
+.presentation {}
+
+.presentation__title {}
+
+.presentation__text {
+    color: var(--primary-color-2);
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+/* Advantages Section */
+.advantages {
+    background-image: linear-gradient(38.2deg, rgba(43, 127, 255, 0.2) 39.74%, rgba(43, 127, 255, 0) 54.16%, rgba(43, 127, 255, 0) 66.66%);
+}
+
+.advantages__title {}
+
+.advantages__list {}
+
+.advantages__line {
+    color: var(--secondary-color-5);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+/* Procedures Section */
+.procedures {}
+
+.procedures__title {}
+
+.procedures__list {}
+
+.procedures__line {}
+
+.procedures__card {}
+
+.procedures__name {}
+
+/* Contacts Section */
+.contacts {}
+
+.contacts__title {}
+
+.contacts__map {}
+
+.contacts__form {
+    background-color: var(--secondary-color-3);
+    width: 423px;
+    height: 481px;
+    top: 0.87px;
+    border-radius: 32px;
+}
+
+.contacts__title_form-title {
+    color: var(--primary-color-1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.contacts__input {
+    color: var(--primary-color-1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.contacts__button {}
+
+.copyright {
+    text-decoration: underline;
+}
+
+.contacts__copyright {
+    color: var(--secondary-color-2);
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.contacts__link {
+    color: var(--secondary-color-2);
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+/* Footer Section */
+.footer {
+    background-color: var(--primary-color-2);
+}
+
+.footer__navigation {}
+
+.footer__list {}
+
+.footer__line {}
+
+.footer__link {
+    color: var(--primary-color-1);
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.footer__address {}
+
+.footer__copyright {
+    color: var(--secondary-color-2);
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+}
