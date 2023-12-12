@@ -88,7 +88,9 @@ a {
 }
 
 /* Menu */
-.menu {
+.menu {}
+
+.menu__container {
     display: flex;
     align-items: center;
     padding: 53px 0;
@@ -157,14 +159,19 @@ a {
 .front {}
 
 .front__container {
-    max-width: 530px;
-    /* height: 408px; */
-}
-
-.front__container_inner {
     display: flex;
     flex-direction: column;
+    align-items: start;
+    padding-left: 152px;
+    margin-bottom: 126px;
+}
+
+.front__form {
+    display: flex;
+    max-width: 530px;
+    flex-direction: column;
     align-items: flex-start;
+    /* height: 408px; */
 }
 
 .front__text {
@@ -198,7 +205,6 @@ a {
     font-weight: 700;
     line-height: 74px;
     letter-spacing: 0em;
-    text-align: center;
     margin: 0;
     padding: 0;
 }
@@ -245,7 +251,20 @@ a {
 /* Presentation Section */
 .presentation {}
 
-.presentation__title {}
+.presentation__container {
+    display: flex;
+    gap: 32px;
+    max-height: 695px;
+}
+
+.presentation__text-box {
+    align-items: start;
+    flex-basis: calc(100% / 2);
+}
+
+.presentation__title {
+    text-align: left;
+}
 
 .presentation__text {
     color: var(--primary-color-2);
@@ -254,15 +273,57 @@ a {
     font-weight: 400;
     line-height: 38px;
     letter-spacing: 0em;
-    text-align: center;
+    text-align: left;
 }
+
+.presentation__results {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 40px;
+    flex-basis: calc((100% / 2)-40px);
+}
+
+.presentation__before {
+    display: flex;
+    justify-content: space-between;
+}
+
+.presentation__before-photo {
+    width: 328px;
+    height: 328px;
+}
+
+.presentation__stars-pair {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.presentation__star-2 {}
+
+.presentation__star-3 {}
+
+.presentation__after {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.presentation__after-photo {
+    width: 328px;
+    height: 328px;
+}
+
+.presentation__star-1 {}
 
 /* Advantages Section */
 .advantages {
     background-image: linear-gradient(38.2deg, rgba(43, 127, 255, 0.2) 39.74%, rgba(43, 127, 255, 0) 54.16%, rgba(43, 127, 255, 0) 66.66%);
 }
 
-.advantages__title {}
+.advantages__title {
+    text-align: center;
+}
 
 .advantages__list {}
 
@@ -279,7 +340,9 @@ a {
 /* Procedures Section */
 .procedures {}
 
-.procedures__title {}
+.procedures__title {
+    text-align: center;
+}
 
 .procedures__button {
     display: flex;
@@ -312,7 +375,9 @@ a {
 /* Contacts Section */
 .contacts {}
 
-.contacts__title {}
+.contacts__title {
+    text-align: center;
+}
 
 .contacts__map {}
 

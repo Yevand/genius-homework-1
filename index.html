@@ -10,38 +10,40 @@
 
 <body>
     <header class="header">
-        <div class="container">
-            <div class="menu">
-                <a href="./index.html">
-                    <svg class="menu__logo logo" width="74" height="42">
-                        <use href="./images/icons.svg#icon-logo"></use>
-                    </svg>
-                </a>
-                <nav class="menu__navigation navigation">
-                    <ul class="menu__list">
-                        <li class="menu__line"><a class="menu__link max-accent" href="#">Про нас</a></li>
-                        <li class="menu__line"><a class="menu__link" href="#">Чому ми</a></li>
-                        <li class="menu__line"><a class="menu__link" href="#">Наші процедури</a></li>
-                        <li class="menu__line"><a class="menu__link" href="#">Контакти</a></li>
-                    </ul>
-                </nav>
-                <address class="menu__address">
-                    <a class="menu__link" href="tell:+380960000007">
-                        <svg class="menu__telephone menu__telephone_dark" width="32" height="32">
-                            <use href="./images/icons.svg#icon-telephone"></use>
+        <div class="menu">
+            <div class="container">
+                <div class="menu__container">
+                    <a href="./index.html">
+                        <svg class="menu__logo logo" width="74" height="42">
+                            <use href="./images/icons.svg#icon-logo"></use>
                         </svg>
                     </a>
-                    <a class="menu__link" href="#">
-                        <svg class="menu__facebook menu__facebook_dark" width="32" height="32">
-                            <use href="./images/icons.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                    <a class="menu__link" href="#">
-                        <svg class="menu__instargam menu__instagram_dark" width="32" height="32">
-                            <use href="./images/icons.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </address>
+                    <nav class="menu__navigation navigation">
+                        <ul class="menu__list">
+                            <li class="menu__line"><a class="menu__link max-accent" href="#">Про нас</a></li>
+                            <li class="menu__line"><a class="menu__link" href="#">Чому ми</a></li>
+                            <li class="menu__line"><a class="menu__link" href="#">Наші процедури</a></li>
+                            <li class="menu__line"><a class="menu__link" href="#">Контакти</a></li>
+                        </ul>
+                    </nav>
+                    <address class="menu__address">
+                        <a class="menu__link" href="tell:+380960000007">
+                            <svg class="menu__telephone menu__telephone_dark" width="32" height="32">
+                                <use href="./images/icons.svg#icon-telephone"></use>
+                            </svg>
+                        </a>
+                        <a class="menu__link" href="#">
+                            <svg class="menu__facebook menu__facebook_dark" width="32" height="32">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="menu__link" href="#">
+                            <svg class="menu__instargam menu__instagram_dark" width="32" height="32">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </address>
+                </div>
             </div>
         </div>
     </header>
@@ -49,7 +51,7 @@
         <section class="front">
             <div class="container">
                 <div class="front__container">
-                    <div class="front__container front__container_inner">
+                    <div class="front__form">
                         <p class="front__text">Косметологічна клініка</p>
                         <h1 class="front__title title">
                             Beauty
@@ -68,29 +70,43 @@
         </section>
         <section class="presentation">
             <div class="container">
-                <svg class="presentation__star-1" width="48" height="48">
-                    <use href="./images/icons.svg#icon-star-1"></use>
-                </svg>
-                <svg class="presentation__star-2" width="48" height="48">
-                    <use href="./images/icons.svg#icon-star-2"></use>
-                </svg>
-                <svg class="presentation__star-3" width="48" height="48">
-                    <use href="./images/icons.svg#icon-star-3"></use>
-                </svg>
-                <h2 class="presentation_title title">
-                    Перевтілюйтесь
-                    <br><span class="max-accent">в beauty zone!</span>
-                </h2>
-                <p class="presentation__text">
-                    Наша косметологічна клініка пропонує вам професійні послуги
-                    <br>з догляду за шкірою обличчя та тіла.
-                </p>
-                <p class="presentation__text">
-                    B <span class="mini-accent">Beauty Zone</span> ми гарантуємо найвищі стандарти якості
-                    <br>та приємний сервіс. Наші косметологічні процедури та препарати
-                    <br>допоможуть вам підтримувати свою красу та молодість.
-                    <br>З нами краса назавжди!
-                </p>
+                <div class="presentation__container">
+                    <div class="presentation__text-box">
+                        <h2 class="presentation_title title">
+                            Перевтілюйтесь
+                            <br><span class="max-accent">в beauty zone!</span>
+                        </h2>
+                        <p class="presentation__text">
+                            Наша косметологічна клініка пропонує вам професійні послуги
+                            <br>з догляду за шкірою обличчя та тіла.
+                        </p>
+                        <p class="presentation__text">
+                            B <span class="mini-accent">Beauty Zone</span> ми гарантуємо найвищі стандарти якості
+                            <br>та приємний сервіс. Наші косметологічні процедури та препарати
+                            <br>допоможуть вам підтримувати свою красу та молодість.
+                            <br>З нами краса назавжди!
+                        </p>
+                    </div>
+                    <div class="presentation__results">
+                        <div class="presentation__before">
+                            <img class="presentation__before-photo" src="./images/before.jpg" alt="Face before">
+                            <div class="presentation__stars-pair">
+                                <svg class="presentation__star-2" width="48" height="48">
+                                    <use href="./images/icons.svg#icon-star-2"></use>
+                                </svg>
+                                <svg class="presentation__star-3" width="48" height="48">
+                                    <use href="./images/icons.svg#icon-star-3"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="presentation__after">
+                            <img class="presentation__after-photo" src="./images/after.jpg" alt="Face after">
+                            <svg class="presentation__star-1" width="48" height="48">
+                                <use href="./images/icons.svg#icon-star-1"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="advantages">
