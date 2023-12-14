@@ -78,7 +78,9 @@ a {
 
 /* Header */
 
-.header {}
+.header {
+    display: block;
+}
 
 .container {
     width: 100%;
@@ -88,7 +90,9 @@ a {
 }
 
 /* Menu */
-.menu {}
+.menu {
+    display: block;
+}
 
 .menu__container {
     display: flex;
@@ -105,7 +109,9 @@ a {
     align-items: flex-start;
 }
 
-.navigation {}
+.navigation {
+    display: block;
+}
 
 .menu__navigation {
     display: flex;
@@ -122,7 +128,9 @@ a {
     max-width: 525px;
 }
 
-.menu__line {}
+.menu__line {
+    display: inline;
+}
 
 .menu__link {
     color: var(--primary-color-2);
@@ -156,7 +164,9 @@ a {
 }
 
 /* Front Section */
-.front {}
+.front {
+    display: block;
+}
 
 .front__container {
     display: flex;
@@ -171,7 +181,6 @@ a {
     max-width: 530px;
     flex-direction: column;
     align-items: flex-start;
-    /* height: 408px; */
 }
 
 .front__text {
@@ -249,7 +258,9 @@ a {
 }
 
 /* Presentation Section */
-.presentation {}
+.presentation {
+    display: block;
+}
 
 .presentation__container {
     display: flex;
@@ -323,7 +334,9 @@ a {
 }
 
 /* Advantages Section */
-.advantages {}
+.advantages {
+    display: block;
+}
 
 .advantages__container {
     display: flex;
@@ -395,10 +408,27 @@ a {
 }
 
 /* Procedures Section */
-.procedures {}
+.procedures {
+    display: block;
+}
+
+.procedures__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 140px;
+}
+
+.procedures__text-box {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
 
 .procedures__title {
     text-align: center;
+    margin-bottom: 48px;
 }
 
 .procedures__button {
@@ -406,7 +436,7 @@ a {
     flex-shrink: 0;
     align-items: center;
     justify-content: center;
-    rotate: -180deg;
+    rotate: 0;
     width: 44px;
     height: 44px;
     padding: 0;
@@ -418,16 +448,66 @@ a {
 }
 
 .procedures__button_reverse {
-    rotate: -360deg;
+    rotate: -180deg;
 }
 
-.procedures__list {}
+.procedures__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
 
-.procedures__line {}
+.procedures__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 456px;
+    max-width: 344px;
+    border-radius: 4px 120px 4px 120px;
+}
 
-.procedures__card {}
+.procedures__item_1 {
+    background-image: url(/genius-homework-1/images/procedures-1.jpg);
+}
 
-.procedures__name {}
+.procedures__item_2 {
+    background-image: url(/genius-homework-1/images/procedures-2.jpg);
+}
+
+.procedures__item_3 {
+    background-image: url(/genius-homework-1/images/procedures-3.jpg);
+}
+
+.procedures__line {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px 120px 4px 120px;
+    background-image:
+        linear-gradient(180deg,
+            transparent 0%,
+            var(--primary-color-2) 100%);
+}
+
+.procedures__card {
+    display: block;
+}
+
+.procedures__text {
+    max-width: 152px;
+    color: var(--primary-color-1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+}
 
 /* Contacts Section */
 .contacts {}
