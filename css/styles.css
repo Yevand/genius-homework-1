@@ -62,7 +62,8 @@ h2,
 h3,
 h4,
 h5,
-h6 p {
+h6,
+p {
     margin-top: 0;
 }
 
@@ -179,6 +180,7 @@ a {
 .front__form {
     display: flex;
     max-width: 530px;
+    padding-right: 152px;
     flex-direction: column;
     align-items: flex-start;
 }
@@ -230,6 +232,7 @@ a {
 .front__call {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 14px;
     width: 238px;
     height: 103px;
@@ -242,7 +245,6 @@ a {
     padding: 16px, 32px, 16px, 32px;
     border: 0;
     border-radius: 32px;
-    gap: 10px;
 
     color: var(--primary-color-1);
     font-family: 'Roboto', sans-serif;
@@ -265,7 +267,8 @@ a {
 .presentation__container {
     display: flex;
     gap: 32px;
-    max-height: 695px;
+    min-height: 695px;
+    flex-wrap: wrap;
 }
 
 .presentation__text-box {
@@ -342,11 +345,7 @@ a {
     display: flex;
     flex-direction: column;
     padding-top: 176px;
-    background-image: url(/images/advantages-background.png);
-    /* background-image: linear-gradient(180deg,
-            rgba(43, 127, 255, 0.2) 39.74%,
-            rgba(43, 127, 255, 0) 54.16%,
-            rgba(43, 127, 255, 0) 66.66%); */
+    background-image: url(/genius-homework-1/images/advantages-background.png);
 }
 
 .advantages__title {
@@ -395,6 +394,7 @@ a {
     display: flex;
     justify-content: center;
     margin-bottom: 96px;
+    flex-wrap: wrap;
 }
 
 .advantages__line {
@@ -433,6 +433,15 @@ a {
 
 .procedures__button {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0 16px 0 0;
+}
+
+.procedures__arrow {
+    display: flex;
     flex-shrink: 0;
     align-items: center;
     justify-content: center;
@@ -447,14 +456,25 @@ a {
     cursor: pointer;
 }
 
-.procedures__button_reverse {
+.procedures__arrow_reverse {
     rotate: -180deg;
+}
+
+.procedures__button_reverse {
+    padding: 0 0 0 16px;
 }
 
 .procedures__list {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+}
+
+.procedures__presentation {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 16px;
 }
 
@@ -462,10 +482,8 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-grow: 1;
-    flex-shrink: 1;
     height: 456px;
-    max-width: 344px;
+    width: 344px;
     border-radius: 4px 120px 4px 120px;
 }
 
@@ -509,21 +527,83 @@ a {
     text-align: center;
 }
 
+.procedures__slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    padding-top: 32px;
+    gap: 24px;
+}
+
+.procedures__dot {
+    display: flex;
+    flex-shrink: 0;
+    width: 11px;
+    height: 11px;
+    padding: 0;
+    background-color: var(--secondary-color-2);
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.procedures__dot_1 {
+    background-color: #2B7FFF;
+}
+
+.procedures__dot_2 {}
+
+.procedures__dot_3 {}
+
 /* Contacts Section */
-.contacts {}
+.contacts {
+    display: block;
+}
+
+.contacts__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .contacts__title {
     text-align: center;
+    margin-bottom: 48px;
 }
 
-.contacts__map {}
+.contacts__form-and-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    max-width: 1060px;
+    min-height: 480px;
+    margin-bottom: 90px;
+}
 
-.contacts__form {
-    background-color: var(--secondary-color-3);
-    width: 423px;
-    height: 481px;
-    top: 0.87px;
+.contacts__map {
+    border: 0;
     border-radius: 32px;
+    max-width: 605px;
+    height: 480px;
+}
+
+.contact__form {
+    border: 0;
+    border-radius: 32px;
+    background-color: var(--primary-color-2);
+    padding: 48px 56px 48px 56px;
+}
+
+.contacts__form-frame {
+    display: block;
+}
+
+.contacts__form-box {
+    background-color: var(--primary-color-2);
 }
 
 .contacts__title_form-title {
@@ -534,6 +614,25 @@ a {
     line-height: 26px;
     letter-spacing: 0em;
     text-align: center;
+    max-width: 274px;
+    padding: 0 18px 0 18px;
+    margin: 0 0 32px 0;
+}
+
+.contacts__form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.contacts__input-border {
+    display: flex;
+    align-items: center;
+    max-width: 306px;
+    height: 48px;
+    border: 2px solid var(--secondary-color-2);
+    border-radius: 32px;
 }
 
 .contacts__input {
@@ -541,12 +640,28 @@ a {
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
     font-weight: 400;
-    line-height: 15px;
-    letter-spacing: 0em;
+    line-height: 16px;
     text-align: left;
+    background-color: transparent;
+    border: none;
+    max-width: 244px;
+    height: 16px;
+    padding: 0 0 0 32px;
 }
 
-.contacts__button {}
+.contacts__appoinment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+}
+
+.contacts__button {
+    width: 281px;
+    height: 53px;
+}
 
 .copyright {
     text-decoration: underline;
@@ -560,6 +675,7 @@ a {
     line-height: 18px;
     letter-spacing: 0em;
     text-align: center;
+    margin: 0;
 }
 
 .contacts__link {
